@@ -1,0 +1,259 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+body {
+    font-family: Microsoft Yahei,"微软雅黑";
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    /*overflow: hidden;*/
+    font-size: 18px;
+    padding: 16px;
+    background-color: #f5bd4e;
+}
+
+#title {
+    color: white;
+    cursor: default;
+    position: relative;
+    transition: height 2s ease 1s;
+    height: 50px;
+    width: 320px;
+    overflow: hidden;
+}
+#title:hover {
+    height: 140px;
+}
+#title h1 {
+    opacity: 0.25;
+    transition-duration: 1s;
+    display: inline-block;
+}
+#title:hover h1 {
+    opacity: 0.5;
+}
+#title:hover h1:hover {
+    opacity: 1;
+}
+
+#title .more_detail {
+    color: #e55756;
+    font-size: 16px;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 55px;
+    width: 320px;
+}
+
+
+
+
+.show {
+    width: 590px;
+    position: absolute;
+    right: 10%;
+    bottom: 5%;
+}
+table {
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+table td {
+    display:inline-block;
+    margin:0 15px;
+    line-height: 52px;
+    width: 52px;
+    border-radius: 25px;
+    position: relative;
+    cursor: pointer;
+    transition-duration: 1s;
+    transition-delay: 0.05s;
+}
+table td:hover {
+    background-color: #e55756;
+}
+table td:hover h6{
+    opacity: 1;
+}
+
+table tr h4{
+    font-weight: 100;
+    font-size: 40px;
+}
+table tr h6 {
+    position: absolute;
+    width: 100%;
+    bottom: -20px;
+    left: 30px;
+    font-size: 16px;
+    color: #e55756;
+    opacity: 0.1;
+    transition:opacity 1s;
+}
+table tr td:first-child,table tr:first-child td{
+    cursor: default;
+    background-color: transparent;
+    color: #4e4562;
+    opacity: 0;
+    transition-delay: 1s;
+    transition-duration: 1s;
+}
+table tr td:first-child{
+    margin-right: 0;
+    padding-right: 6px;
+    text-align: right;
+}
+table tr:first-child{
+    position: absolute;
+    left: -14px;
+    top: -36px;
+    z-index: 100;
+} 
+table tr:first-child td {
+    margin-right: 10px;
+}
+table:hover tr td:first-child,table:hover tr:first-child td{
+    opacity: 1;
+}
+
+#info {
+    position: absolute;
+    right: 76px;
+    top: 12px;
+    color: white;
+    cursor: default;
+}
+#info span {
+    transition: 1s;
+}
+#info span:hover {
+    color: #e55756;
+}
+#info span.selected{
+    animation: change 1s linear;
+}
+
+@keyframes change{
+    0%{color:#fff;}
+    50% {color:#e55756;}
+    100% {color:#fff;}
+}
+    
+.select1, .select2 {
+    position: absolute;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    width: 50px;
+
+}
+
+.select1 {
+    right: 0;
+}
+.select2 {
+    right: -50px;
+}
+
+.select1 div,.select2 div{
+    background-color: rgba(255, 255, 255,0.3);
+    color:transparent;
+    flex: 1;
+    transition: 0.5s;
+    cursor: pointer;
+    text-align: center;
+}
+.select1 div:hover,.select2 div:hover {
+    background-color: white;
+}
+.select1 .selected,.select2 .selected{ 
+    background-color: rgba(255, 255, 255,0.75);
+}
+
+
+
+
+
+
+
+#qing_hard {
+    display: none;
+}
+
+
+#zhuo_detail {
+    display: none;
+}
+
+#ao_detail {
+    display: none;
+}
+
+.note {
+    display: none;
+    position: absolute;
+}
+
+/*
+
+#title:hover .contact {
+    opacity: 1;
+}
+
+#title:hover #more {
+    display: block;
+}
+
+.social {
+    background-color: #f73b34;
+    width: 40px;
+    height: 40px;
+    transition: 1s;
+    display: inline-block;
+    margin-right: 3px;
+    border-bottom: none;
+    border-radius: 20px;
+    opacity: 0.25;
+}
+.social:hover {
+    background-color: #105150;
+    border-radius: 0;
+}
+
+.social-twitter {
+    background-position: 0 0;
+}
+.social-facebook {
+    background-position: -40px 0;
+}
+
+#more {
+    display: none;
+    font-size: 12px;
+}
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
