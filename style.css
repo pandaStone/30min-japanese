@@ -23,7 +23,7 @@ body {
     font-size: 18px;
     padding: 16px;
     background-color: #f5bd4e;
-    overflow: hidden;
+    //overflow: hidden;
 }
 
 #title {
@@ -31,12 +31,12 @@ body {
     cursor: default;
     position: relative;
     transition: height 2s ease 1s;
-    height: 50px;
+    height: 46px;
     width: 320px;
     overflow: hidden;
 }
 #title:hover {
-    height: 140px;
+    height: 202px;
 }
 #title h1 {
     opacity: 0.25;
@@ -59,7 +59,14 @@ body {
     top: 55px;
     width: 320px;
 }
-
+#title .more_detail a {
+    color: #fff;
+    transition: 1.2s;
+    text-decoration: none;
+}
+#title .more_detail a:hover {
+    color: #e55756;
+}
 
 
 
@@ -99,13 +106,14 @@ table tr h4{
 }
 table tr h6 {
     position: absolute;
-    width: 100%;
-    bottom: -20px;
-    left: 36px;
+    bottom: 0px;
     font-size: 16px;
     color: #e55756;
     opacity: 0;
     transition:opacity 1s;
+    width: 80px;
+    padding-left: 48px;
+
 }
 
 #ao_soft tr h4,#ao_hard tr h4{
@@ -118,24 +126,12 @@ table tr h6 {
     position: absolute;
     right: 76px;
     top: 12px;
-    color: white;
+    color: #4e4562;
     cursor: default;
-}
-#info span {
-    transition: 1s;
-}
-#info span:hover {
-    color: #e55756;
-}
-#info span.selected{
-    animation: change 1s linear;
+    font-weight: bold;
 }
 
-@keyframes change{
-    0%{color:#fff;}
-    50% {color:#e55756;}
-    100% {color:#fff;}
-}
+
     
 .select1, .select2 {
     position: absolute;
@@ -169,7 +165,7 @@ table tr h6 {
     background-color: rgba(255, 255, 255,0.75);
 }
 
-#qing_hard,#zhuo_detail,#ao_detail {
+.hide {
     display: none;
 }
 
@@ -236,6 +232,10 @@ table tr h6 {
 
 .note #order img {
     width: 110px;
+    height: 110px;
+}
+.img-show {
+    display:inline;
 }
 .note #idea_detail {
     position: absolute;
@@ -253,7 +253,7 @@ table tr h6 {
 }
 
 .note .word .word_spell,.note .word #word{
-    width: 70px;
+    width: 110px;
 }
 .note .word #word_detail {
     position: absolute;
@@ -302,45 +302,6 @@ table tr h6 {
         opacity: 1;
     }
 }
-/*
-
-#title:hover .contact {
-    opacity: 1;
-}
-
-#title:hover #more {
-    display: block;
-}
-
-.social {
-    background-color: #f73b34;
-    width: 40px;
-    height: 40px;
-    transition: 1s;
-    display: inline-block;
-    margin-right: 3px;
-    border-bottom: none;
-    border-radius: 20px;
-    opacity: 0.25;
-}
-.social:hover {
-    background-color: #105150;
-    border-radius: 0;
-}
-
-.social-twitter {
-    background-position: 0 0;
-}
-.social-facebook {
-    background-position: -40px 0;
-}
-
-#more {
-    display: none;
-    font-size: 12px;
-}
-
-*/
 
 
 
